@@ -1,0 +1,60 @@
+package polii;
+
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class DiceMonthProgram {
+	static int[] dice1={0,1,2,3,5,7};
+	static int[] dice2={0,1,2,4,6,8};
+
+	public static int reverse(){
+		return 9;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the day:");
+		int n=sc.nextInt();
+		
+		int p2=n%10;
+		int p1=(n-p2)/10;
+		
+		int b=Arrays.binarySearch(dice1, p1);
+		int b1=Arrays.binarySearch(dice2, p2);
+		
+			if(n==0||n==00||n>31||n<0){
+				System.out.println("Please enter a valid Date");
+			}
+			else if(p2==9){
+					   
+					   System.out.println("Dice 1:"+p1+"\tDice 2:"+reverse());
+				   }			
+			
+			else{
+				
+			    
+			    		
+			    	if(b>=0&&b1>=0){
+					   
+						   System.out.println("Dice 1:"+p1+"\tDice 2:"+p2);
+						
+					   }
+				   
+			        else {
+				  
+					  System.out.println("Dice 2:"+p1+"\tDice 1:"+p2);
+				  
+			        }
+				
+			     }
+			    
+			  
+			
+	
+			
+		
+		sc.close();
+	}
+
+}
