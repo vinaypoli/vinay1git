@@ -1,0 +1,9 @@
+git init
+git clone https://github.com/vinaypoli/vinay1git.git
+git status
+git add dice.txt
+git push https://github.com/vinaypoli/vinay1git.git
+git pull https://github.com/vinaypoli/vinay1git.git
+git config --global user.name "vinaypoli"
+git config --global user.email "polivinaykumarreddy@gmail.com"
+git commit -m "hi"
